@@ -3,44 +3,51 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title></title>
+    <title>Stellar</title>
     <link rel="stylesheet" type="text/css" href="./semantic/dist/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/mq.css">
   </head>
   <body>
     <div class='ui container'>
       <section class='landing'>
-        <div class="ui secondary menu" >
-          <div class='item'>
-            <i class="ui huge snowflake icon"></i>
-            Lorem Ipsum<br>
-            Lorem ipsum dolor sit
+        <div class="ui secondary menu">
+          <div class='item' id='logo-block'>
+            <i class="ui huge snowflake icon" id='logo'></i>
+            <span>
+              <span class='logo-title'>Stellar</span><br>
+              <span class='logo-desc'>Lorem ipsum</span>
+            </span>
           </div>
-          <div class='item'>
+          <div class='nav item' id='computer-only'>
             <a class="ui item">
-              Lorem
+              Blog
             </a>
             <a class="ui item">
-              Lorem
+              Wiki
             </a>
             <a class="ui item">
-              Lorem
+              Github
             </a>
             <a class="ui item">
-              Lorem
+              About
             </a>
             <a class="ui item">
-              Lorem
+              Contact
             </a>
           </div>
-          <div class="right menu" id='computer-only'>
+          <div class="right menu">
             <div class="item">
-              <button class="ui circular facebook icon button">
+              <button class="ui circular facebook icon button" id='computer-only'>
                 <i class="facebook icon"></i>
               </button>
+            </div>
+            <div class='item'>
               <button class="ui circular twitter icon button">
                 <i class="twitter icon"></i>
               </button>
+            </div>
+            <div class='item'>
               <button class="ui circular linkedin icon button">
                 <i class="linkedin icon"></i>
               </button>
@@ -49,16 +56,19 @@
         </div>
         <div class="ui stackable grid">
           <div class='nine wide column'>
-            <h2 class='ui centered header'>
-              Lorem ipsum dolor sit amet consectetur,<br>sed do eiusmod tempor incididunt.
-              <div class='sub header'>
+            <h2 class='ui centered header' id='tag'>
+              Lorem ipsum dolor sit amet consectetur sed do eiusmod tempor.
+              <div class='sub header' id='tag-desc'>
                 Lorem ipsum dolor sit amet consectetur
               </div>
             </h2>
-            <div class="ui input">
-              <input type="text" placeholder="Enter your email">
+            <div class='cta'>
+              <div class="ui input">
+                <input type="text" placeholder="Enter your email">
+              </div>
+              <button class='ui button' id='cta-btn'>GET EARLY ACCESS</button>
             </div>
-            <button class='ui button'>GET EARLY ACCESS</button>
+            <p id='mobile-only'>Available in alpha for Android and iOS</p>
           </div>
           <div class='seven wide column'>
             <div class='mobile-wrap'>
@@ -76,7 +86,7 @@
               <h3 class='ui header'>
                 Lorem ipsum dolor sit amet
               </h3>
-              <p>
+              <p class='features-desc'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
               </p>
             </div>
@@ -85,17 +95,17 @@
               <h3 class='ui header'>
                 Lorem ipsum dolor sit amet
               </h3>
-              <p>
+              <p class='features-desc'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
               </p>
-              <button class='ui button'>Learn more</button>
+              <button class='ui button' id='features-btn'>Learn more</button>
             </div>
             <div class='center aligned column'>
               <i class="ui big road icon"></i>
               <h3 class='ui header'>
                 Lorem ipsum dolor sit amet
               </h3>
-              <p>
+              <p class='features-desc'>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
               </p>
             </div>
@@ -105,11 +115,11 @@
     </div>
     <section class='blocks'>
       <div class='ui text container'>
-        <h2 class='ui centered header'>
+        <h2 class='ui centered header' id='blocks-header'>
           Lorem ipsum dolor sit amet
-          <div class='sub header'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>
+          <div class='sub header' id='blocks-desc'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             Ut enim ad minim veniam do eiusmod tempor incididunt.
           </div>
         </h2>
@@ -125,7 +135,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor.
               </div>
-              <i class="ui big circle icon"></i>
+              <i class="ui big circle icon" id='block-icon'></i>
             </div>
           </div>
           <div class="column">
@@ -137,7 +147,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor.
               </div>
-              <i class="ui big cubes icon"></i>
+              <i class="ui big cubes icon" id='block-icon'></i>
             </div>
           </div>
           <div class="column">
@@ -149,7 +159,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor.
               </div>
-              <i class="ui big spinner icon"></i>
+              <i class="ui big spinner icon" id='block-icon'></i>
             </div>
           </div>
           <div class="column">
@@ -161,7 +171,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor.
               </div>
-              <i class="ui big cube icon"></i>
+              <i class="ui big cube icon" id='block-icon'></i>
             </div>
           </div>
         </div>
@@ -175,7 +185,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor.
               </div>
-              <i class="ui big pie chart icon"></i>
+              <i class="ui big pie chart icon" id='block-icon'></i>
             </div>
           </div>
           <div class="column">
@@ -187,7 +197,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor.
               </div>
-              <i class="ui big game icon"></i>
+              <i class="ui big game icon" id='block-icon'></i>
             </div>
           </div>
           <div class="column">
@@ -199,24 +209,28 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                 sed do eiusmod tempor.
               </div>
-              <i class="ui big circle notched icon"></i>
+              <i class="ui big circle notched icon" id='block-icon'></i>
             </div>
           </div>
           <div class="center aligned column">
-            <i class="ui huge add circle icon"></i>
+            <i class="ui huge add circle icon" id='plus-icon'></i>
             <div class='desc'>
-              Lorem ipsum dolor sit amet,<br>
-              consectetur elit sed do eiusmod<br>
+              Lorem ipsum dolor sit amet,
+              consectetur elit sed do eiusmod
               tempor incididunt ut labore.
             </div>
           </div>
         </div>
       </div>
     </section>
+    <div class='footer' id='computer-only'>
+      Available in alpha for Android and iOS
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.1.1.min.js"
       integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
       crossorigin="anonymous"></script>
     <script src="./semantic/dist/semantic.min.js"></script>
+    <script src="./assets/scripts/scripts.js"></script>
   </body>
 </html>
