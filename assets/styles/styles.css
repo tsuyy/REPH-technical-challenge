@@ -39,7 +39,23 @@ a.ui.item {
 
 a.ui.item:hover {
   background: none!important;
-  color: rgba(253, 249, 249, 0.92)!important;
+  opacity: .88!important;
+}
+
+#external-icon {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+#add-class {
+  visibility: hidden;
+}
+
+.fade-left {
+  opacity: 0.6;
+  transform: translateX(-4px);
+  transition: .3s ease-in-out;
+  visibility: visible!important;
 }
 
 .logo-title {
@@ -78,13 +94,15 @@ button.linkedin {
 
 .landing {
   background-color: #4957B8;
-  height: 780px;
+  height: 720px;
   box-shadow: 0px 10px 14px 0px rgba(79, 90, 166, 0.35);
-  border-radius: 10px;
+  border-radius: 15px;
   transform: translate3d(0, 0, 0);
   transition: transform .6s ease, opacity .3s ease;
-  width: 1080px;
+  width: 1050px;
   margin: 30px auto 0 auto;
+  background-image: url(../img/dot.svg);
+  background-repeat: repeat;
 }
 
 #tag {
@@ -93,7 +111,7 @@ button.linkedin {
   line-height: 35px;
   font-weight: lighter;
   width: 75%;
-  margin: 150px auto 5px auto;
+  margin: 140px auto 5px auto;
 }
 
 #tag-desc {
@@ -117,7 +135,6 @@ input {
   height: 45px!important;
   padding: 0 15px;
   margin: 0 10px 0 0;
-  font-family: 'PostGrotesk-Book', sans-serif;
   box-sizing: border-box;
   font-weight: 400;
   font-size: 15px!important;
@@ -177,16 +194,16 @@ h3.header {
 
 .mobile-1 {
   position: absolute;
-  top: 40px;
+  top: -20px;
   width: 350px;
   right: 160px;
 }
 
 .mobile-2 {
   position: absolute;
-  top: 120px;
+  top: 75px;
   width: 350px;
-  right: -13px;
+  right: -25px;
   z-index: -2;
 }
 
@@ -205,7 +222,7 @@ h3.header {
   padding: 35px 80px;
   background: white;
   box-shadow: 0px -2px 18px 0px rgba(72, 89, 102, 0.25);
-  border-radius: 10px;
+  border-radius: 15px;
   height: 300px;
 }
 
