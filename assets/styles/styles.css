@@ -171,6 +171,11 @@ h3.header {
   height: 300px;
 }
 
+.blocks {
+  width: 70%;
+  margin: 0 auto;
+}
+
 #blocks-header {
   font-size: 24px;
   line-height: 30px;
