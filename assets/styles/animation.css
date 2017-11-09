@@ -1,0 +1,36 @@
+@keyframes fadein {
+  0% {
+    opacity:0;
+    -webkit-transform: translateY(20px);
+  }
+  100% {
+    opacity:1;
+    -webkit-transform: translateY(0px);
+  }
+}
+
+#tag {
+  animation: fadein 1.2s;
+  -moz-animation: fadein 1.2s; /* Firefox */
+  -webkit-animation: fadein 1.2s; /* Safari and Chrome */
+  -o-animation: fadein 1.2s; /* Opera */
+  animation-fill-mode: backwards;
+}
+
+.cta {
+  animation: fadein 1.2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+.mobile-1 {
+  animation: fadein 1.2s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+}
+
+.mobile-2 {
+  animation: fadein 1.2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
